@@ -25,16 +25,18 @@
     </div>
 <!-- 1 display data -->
     <ul class="flashcard-list">
-      <!-- 1 display data loop through the cards array and display each card in cards-->
-      <li v-on:click="toggleCard(card)" v-for="(card, index) in cards">
-        <!-- display front of card, if card.flipped is false show front-->
-        <p v-show="!card.flipped" class="card">{{card.front}}
-            <span v-on:click="cards.splice(index, 1)" class="delete-card">X</span>
-        </p>
-        <!-- display back of card if card.flipped is true show back-->
-        <p v-show="card.flipped" class="card">{{card.back}}
-            <span v-on:click="cards.splice(index, 1)" class="delete-card">X</span>
-        </p>
+      <!-- 1 display data loop through the cards array and display each card in cards-->      
+      <li v-on:click="toggleCard(card)" v-for="(card, index) in cards"> 
+         <transition name='flip'>     
+          <!-- display front of card, if card.flipped is false show front-->
+          <p v-if="!card.flipped" key="front" class="card">{{card.front}}
+              <span v-on:click="cards.splice(index, 1)" class="delete-card">X</span>
+          </p>
+          <!-- display back of card if card.flipped is true show back-->
+          <p v-else class="card" key="back">{{card.back}}
+              <span v-on:click="cards.splice(index, 1)" class="delete-card">X</span>
+          </p>
+        </transition>     
       </li>
     </ul>
   </div>
