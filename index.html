@@ -21,7 +21,7 @@
         <input v-model="newBack" type="text" id="back">
       </label>
       <button v-on:click="addNew">Add a New Card</button>
-      <span class="error">Oops! Flashcards need a front and a back.</span>
+      <span v-show="error" class="error">Oops! Flashcards need a front and a back.</span>
     </div>
 <!-- 1 display data -->
     <ul class="flashcard-list">

@@ -41,7 +41,8 @@ const cards = [
     data: {
       cards: cards,
       newFront: '',
-      newBack: ''
+      newBack: '',
+      error: false
       
     },
     methods: {
@@ -49,11 +50,17 @@ const cards = [
       card.flipped = !card.flipped;
       },
       addNew: function(){
+        if(!this.newFront || !this.newBack){
+          this.error = true;
+        } else {
         this.cards.push({
           front: this.newFront,
           back: this.newBack,
           flipped: false
-        })
+        });
+        this.newFront = "";
+        this.newBack = "";
       }
     }
+  }
   });
