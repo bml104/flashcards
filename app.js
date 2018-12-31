@@ -1,52 +1,59 @@
+// 0 create dummy cards
+// 1 display data
+// 2 on click, flip card
+// 3 get info for new card
+  // create data properties for front and back
+  // bind those to form inputs using vmodel
+// 4 add card
+// 5 delete card
+// 6 animate card flip
+// display error
+
+// 0 create dummy cards
 const cards = [
   {
-    front: 'The "First Computer Programmer"',
-    back: 'Ada Lovelace',
+    front: '2 + 2',
+    back: '4',
     flipped: false,
   },
   {
-    front: 'Invented the "Clarke Calculator"',
-    back: 'Edith Clarke',
+    front: '3 + 3',
+    back: '6',
     flipped: false,
 
   },
   {
-    front: 'Famous World War II Enigma code breaker',
-    back: 'Alan Turing',
+    front: '4 + 4',
+    back: '8',
     flipped: false,
   },
   {
-    front: 'Created satellite orbit analyzation software for NASA',
-    back: 'Dr. Evelyn Boyd Granville',
+    front: '5 + 5',
+    back: '10',
     flipped: false,
   },
 ]; 
 
-// Add new card when user hits enter or clicks button 
-  // Create a method
-    // creates a new card object containing new card information
-    // pushes that card object in to the cards array 
-// Delete cards
-// Animated card flip 
-// Display an error message if form fields are left blank 
 
-new Vue({
-  el: '#flashcard-app',
-  data: {
-    cards: cards,
-    newFront: '',
-    newBack: ''
-  },
-  methods: {
-    toggleCard: function(card){
-      card.flipped = !card.flipped;
+// 1 display data
+  new Vue({
+    el: '#flashcard-app',
+    data: {
+      cards: cards,
+      newFront: '',
+      newBack: ''
+      
     },
-    addNew: function(){
-      this.cards.push({
-        front: this.newFront,
-        back: this.newBack,
-        flipped: false
-      });
+    methods: {
+      toggleCard: function(card){
+      card.flipped = !card.flipped;
+      },
+      addNew: function(){
+        this.cards.push({
+          front: this.newFront,
+          back: this.newBack,
+          flipped: false
+        })
+      }
     }
-  }
-});
+  });

@@ -6,31 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>TPL Flashcards</title>
+  <title>Flash!</title>
 </head>
 <body>
   <div id="flashcard-app" class="container">
 
-    <h1>Flashcard App!</h1>
+    <h1>Flashcard</h1>
 
     <div class="flashcard-form">
       <label for="front">Front
         <input v-model="newFront" type="text" id="front">
       </label>
       <label for="back">Back
-        <input v-on:keypress.enter="addNew" v-model="newBack" type="text" id="back">
+        <input v-model="newBack" type="text" id="back">
       </label>
       <button v-on:click="addNew">Add a New Card</button>
       <span class="error">Oops! Flashcards need a front and a back.</span>
     </div>
-
+<!-- 1 display data -->
     <ul class="flashcard-list">
-      <li v-on:click="toggleCard(card)" v-for="card in cards">
-        <p v-if="!card.flipped" class="card">{{card.front}}
-            <span class="delete-card">X</span>
+      <!-- 1 display data loop through the cards array and display each card in cards-->
+      <li v-on:click="toggleCard(card)" v-for="(card, index) in cards">
+        <!-- display front of card, if card.flipped is false show front-->
+        <p v-show="!card.flipped" class="card">{{card.front}}
+            <span v-on:click="cards.splice(index, 1)" class="delete-card">X</span>
         </p>
-        <p v-else class="card">{{card.back}}
-            <span class="delete-card">X</span>
+        <!-- display back of card if card.flipped is true show back-->
+        <p v-show="card.flipped" class="card">{{card.back}}
+            <span v-on:click="cards.splice(index, 1)" class="delete-card">X</span>
         </p>
       </li>
     </ul>
