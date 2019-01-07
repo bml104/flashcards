@@ -12,24 +12,114 @@
 // 0 create dummy cards
 const cards = [
   {
-    front: '2 + 2',
-    back: '4',
+    front: 'hola!',
+    back: 'Hello!',
     flipped: false,
   },
   {
-    front: '3 + 3',
-    back: '6',
+    front: "?Que' tal?",
+    back: "how's it going?",
     flipped: false,
 
   },
   {
-    front: '4 + 4',
-    back: '8',
+    front: 'Bien, gracias',
+    back: 'Good, thanks',
     flipped: false,
   },
   {
-    front: '5 + 5',
-    back: '10',
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'Encantado',
+    back: 'Nice to meet you(male)',
+    flipped: false,
+  },
+  {
+    front: 'Encandada',
+    back: 'Nice to meet you(female)',
+    flipped: false,
+  },
+  {
+    front: 'Hasta luego!',
+    back: 'See you later!',
+    flipped: false,
+  },
+  {
+    front: 'Como te llamas',
+    back: "What's your name?",
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
+    flipped: false,
+  },
+  {
+    front: 'soy',
+    back: 'im',
     flipped: false,
   },
 ]; 
