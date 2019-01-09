@@ -22,11 +22,11 @@ body {
   
   .card {
     display: block;
-    width: 150px;
-    height: 175px;
-    padding: 80px 50px;
+    width: 100px;
+    height: 100px;
+    padding: 50px 50px;
     background-color: #5b5d5f;
-    border-radius: 7px;
+    border-radius: 9px;
     margin: 5px;
     text-align: center;
     line-height: 27px;

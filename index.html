@@ -11,18 +11,7 @@
 <body>
   <div id="flashcard-app" class="container">
 
-    <h1>Flashcard</h1>
-
-    <div class="flashcard-form">
-      <label for="front">Front
-        <input v-model="newFront" type="text" id="front">
-      </label>
-      <label for="back">Back
-        <input v-model="newBack" type="text" id="back">
-      </label>
-      <button v-on:click="addNew">Add a New Card</button>
-      <span v-show="error" class="error">Oops! Flashcards need a front and a back.</span>
-    </div>
+       
 <!-- 1 display data -->
     <ul class="flashcard-list">
       <!-- 1 display data loop through the cards array and display each card in cards-->      
@@ -39,6 +28,16 @@
         </transition>     
       </li>
     </ul>
+    <div class="flashcard-form">
+      <label for="front">Front
+        <input v-model="newFront" type="text" id="front">
+      </label>
+      <label for="back">Back
+        <input v-model="newBack" type="text" id="back">
+      </label>
+      <button v-on:click="addNew">Add a New Card</button>
+      <span v-show="error" class="error">Oops! Flashcards need a front and a back.</span>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
