@@ -16,7 +16,7 @@ body {
   }
   
   .container {
-    max-width: 100%;
+    max-width: 90%;
     padding: 2em;
   }
   
@@ -80,7 +80,7 @@ body {
   
   .delete-card:hover, .error {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: rotate(1080deg);
   }
   
   .flip-enter-active {
@@ -151,4 +151,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+/* DO NOT EDIT! 
 
+h1, h2, h3, h4, h5, div, span, p {
+  margin: 20px;
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5 {
+  border: 2px solid red;
+}
+
+div {
+  border: 2px solid green;
+}
+
+span {
+  border: 2px solid blue;
+}
+
+p {
+  border: 2px solid purple;
+}
+*/
