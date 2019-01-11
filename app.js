@@ -113,13 +113,18 @@ const cards = [
     flipped: false,
   },
   {
-    front: 'soy',
-    back: 'im',
+    front: 'Donde estan',
+    back: 'Where are they',
     flipped: false,
   },
   {
-    front: 'soy',
-    back: 'im',
+    front: 'No entiendo',
+    back: 'I do not understand',
+    flipped: false,
+  },
+  {
+    front: 'los servicios',
+    back: 'services',
     flipped: false,
   },
 ]; 
