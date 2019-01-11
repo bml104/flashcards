@@ -123,7 +123,7 @@ const cards = [
     flipped: false,
   },
   {
-    front: 'los servicios',
+    front: 'los  servicios',
     back: 'services',
     flipped: false,
   },
