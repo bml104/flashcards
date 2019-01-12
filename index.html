@@ -17,7 +17,8 @@
 <!-- 1 display data -->
     <ul class="flashcard-list">
       <!-- 1 display data loop through the cards array and display each card in cards-->      
-      <li v-on:click="toggleCard(card)" v-for="(card, index) in cards"> 
+      <!-- <li v-on:click="toggleCard(card)" v-for="(card, index) in cards"> -->
+      <li v-on:click="toggleCard(card)" v-for="card in randomList(cards)">
          <transition name='flip'>     
           <!-- display front of card, if card.flipped is false show front-->
           <p v-if="!card.flipped" key="front" class="card">{{card.front}}

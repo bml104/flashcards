@@ -156,6 +156,9 @@ const cards = [
         this.newFront = "";
         this.newBack = "";
       }
+    },
+    randomList: function(rand){
+      return rand.sort(function(){return 0.5 - Math.random()});
     }
   }
   });
